@@ -1,0 +1,61 @@
+{
+  "name": "api-monitoring",
+  "version": "0.1.0",
+  "description": "Yet Another Monitoring API Status",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "module-alias": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "conventional-changelog-cli": "^1.3.4",
+    "coveralls": "^3.0.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-plugin-prettier": "^2.2.0",
+    "http-server": "^0.9.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "mocha": "^4.0.1",
+    "nsp": "^2.6.3",
+    "nyc": "^11.6.0",
+    "prettier": "^1.7.0",
+    "standard": "^10.0.3",
+    "supertest": "^3.0.0",
+    "validate-commit": "^3.2.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "changelog":
+      "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "commitmsg": "validate-commit-msg -p eslint",
+    "lint": "eslint */**/*.js -f html -o ./test/reports/linter/index.html",
+    "test": "nyc --reporter=lcov --temp-directory=coverage node test/index.js",
+    "make:publish": "bin/publish.sh",
+    "prepublish": "nsp check",
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "serve:coverage": "http-server coverage/ -o",
+    "serve:linter": "http-server test/report/linter -o"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkins-workshop-kairosds/api-monitoring"
+  },
+  "author": {
+    "name": "Pedro Amador Rodríguez",
+    "email": "pedroamador.rodriguez@gmail.com",
+    "url": "https://github.com/jenkins-workshop-kairosds"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenkins-workshop-kairosds/api-monitoring/issues"
+  },
+  "homepage": "https://github.com/jenkins-workshop-kairosds/api-monitoring#readme",
+  "keywords": ["api", "monitoring", "nodejs"]
+}
