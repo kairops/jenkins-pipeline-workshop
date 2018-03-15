@@ -171,10 +171,31 @@ To github.com:jenkins-workshop-kairosds/api-status.git
  * [new branch]      master -> master
 ```
 
+Una vez que tenemos las configuraciones en nuestro proyecto, comenzamos el desarrollo. Dado que no es el objeto de este workshop, tenemos los ficheros en el directorio "api-monitoring-files", sólo tendremos que copiarlas a nuestro proyecto
+
+```shell
+$ cp -rv jenkins-pipeline-workshop/api-monitoring-files api-monitoring
+jenkins-pipeline-workshop/api-monitoring-files -> api-monitoring/api-monitoring-files
+jenkins-pipeline-workshop/api-monitoring-files/test -> api-monitoring/api-monitoring-files/test
+jenkins-pipeline-workshop/api-monitoring-files/test/index.js -> api-monitoring/api-monitoring-files/test/index.js
+jenkins-pipeline-workshop/api-monitoring-files/test/app.js -> api-monitoring/api-monitoring-files/test/app.js
+jenkins-pipeline-workshop/api-monitoring-files/Dockerfile -> api-monitoring/api-monitoring-files/Dockerfile
+jenkins-pipeline-workshop/api-monitoring-files/index.js -> api-monitoring/api-monitoring-files/index.js
+jenkins-pipeline-workshop/api-monitoring-files/README.md -> api-monitoring/api-monitoring-files/README.md
+jenkins-pipeline-workshop/api-monitoring-files/docker-compose-test.yml -> api-monitoring/api-monitoring-files/docker-compose-test.yml
+jenkins-pipeline-workshop/api-monitoring-files/package-lock.json -> api-monitoring/api-monitoring-files/package-lock.json
+jenkins-pipeline-workshop/api-monitoring-files/package.json -> api-monitoring/api-monitoring-files/package.json
+jenkins-pipeline-workshop/api-monitoring-files/docker-compose-production.yml -> api-monitoring/api-monitoring-files/docker-compose-production.yml
+jenkins-pipeline-workshop/api-monitoring-files/Jenkinsfile -> api-monitoring/api-monitoring-files/Jenkinsfile
+jenkins-pipeline-workshop/api-monitoring-files/deploy.sh -> api-monitoring/api-monitoring-files/deploy.sh
+jenkins-pipeline-workshop/api-monitoring-files/src -> api-monitoring/api-monitoring-files/src
+jenkins-pipeline-workshop/api-monitoring-files/src/app.js -> api-monitoring/api-monitoring-files/src/app.js
+```
+
 Tests
 =====
 
-En diferentes momentos:
+Tenemos disponibles los siguientes test para nuestro proyecto:
 
 ```script
 $ npm run lint
@@ -186,7 +207,5 @@ $ npm run precommit
 
 TODO
 ====
-
-[ ] Tener listo todo lo necesario (archivos Dockerfile, compose, scripts, etc.) listo en un directorio para copiar y añadir uno por uno
 
 [ ] Arreglar configuración de Sonar para que recoja la cobertura
