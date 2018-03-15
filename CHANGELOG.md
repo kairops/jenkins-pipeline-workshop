@@ -1,5 +1,5 @@
-<a name="0.1.0"></a>
-# 0.1.0 (2018-03-15)
+<a name="1.0.0"></a>
+# 1.0.0 (2018-03-15)
 
 
 ### Build
@@ -9,6 +9,10 @@
 ### Docs
 
 * Add README ([85391021dffb25527462fc5004e14c0698219e11](https://github.com/red-panda-ci/jenkins-pipeline-workshop/commit/85391021dffb25527462fc5004e14c0698219e11))
+
+### New
+
+* Add api monitoring project files ([53fe72b8295ce67d08fc54aac2de372d31d800eb](https://github.com/red-panda-ci/jenkins-pipeline-workshop/commit/53fe72b8295ce67d08fc54aac2de372d31d800eb))
 
 
 
