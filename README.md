@@ -4,6 +4,8 @@
 
 Demostrar las ventajas de tener configuraciones ágiles de CI/CD en pro de una entregabilidad de producto lo suficientemente preparada como para que no haya fricción en el proceso de release.
 
+El workshop se hizo en las oficinas de Kairós Digital Solutions de Castellana 43 el jueves 15 de marzo de 2018. Es la continuación de la charla sobre Jenkins y Entregabilidad https://github.com/red-panda-ci/jenkins-workshop que se celebró en las oficinas de Gigigo Mobile Services de Doctor Zamenhof, 36 el miércoles 21 de febrero de 2018.
+
 ## Medios
 
 ### Herramientas
