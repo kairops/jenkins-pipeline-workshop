@@ -15,10 +15,10 @@ Demostrar las ventajas de tener configuraciones ágiles de CI/CD en pro de una e
 ### Piezas de CI/CD
 
 * Generator Redpanda Node Module https://github.com/red-panda-ci/generator-redpanda-node-module para hacer scafolding del proyecto.
-* Node Commit Validator https://github.com/madoos/node-commit-validator usado como validador de mensajes de commit
-* Node Changelog Generator https://github.com/red-panda-ci/node-changelog-generator para generar archivos CHANGELOG a partir de los mensajes de commit
-* Npm Command Runner https://github.com/red-panda-ci/npm-command-runner para dar contexto de ejecución "npm" desacoplada
-* Rancher Compose https://github.com/red-panda-ci/rancher-compose para el despliegue del producto
+* Node Commit Validator https://github.com/madoos/node-commit-validator usado como validador de mensajes de commit.
+* Node Changelog Generator https://github.com/red-panda-ci/node-changelog-generator para generar archivos CHANGELOG a partir de los mensajes de commit.
+* Npm Command Runner https://github.com/red-panda-ci/npm-command-runner para dar contexto de ejecución "npm" desacoplada.
+* Rancher Compose https://github.com/red-panda-ci/rancher-compose para el despliegue del producto.
 * Jenkins Pipeline Library https://github.com/red-panda-ci/jenkins-pipeline-library como librereía de apoyo en el pipeline.
 
 ## Producto
@@ -31,13 +31,13 @@ Preparar una aplicación NodeJS que ofrezca un respuesta HTTP de status con la m
 
 * El código fuente debe seguir las reglas StandardJS https://standardjs.com/
 * Los mensajes de commit deben cumplir las reglas "eslint" https://eslint.org/docs/developer-guide/contributing/pull-requests
-* Nuestro código debe tener testing con las métricas e informes accesibles
-* Debemos proporcionar un método para revisar vulnerabilidades comunes en las dependencias
+* Nuestro código debe tener testing con las métricas e informes accesibles.
+* Debemos proporcionar un método para revisar vulnerabilidades comunes en las dependencias.
 * Al tratarse de un proyecto público:
-  * Debe estar alojado en una organización Github
-  * Debe presentar un código de conducta para contribuciones
-* Debe disponer de un pipeline CI/CD configurado con Jenkins con generación automática de releases
-* Cada release debe disponer de su propio Changelog detallado
+  * Debe estar alojado en una organización Github.
+  * Debe presentar un código de conducta para contribuciones.
+* Debe disponer de un pipeline CI/CD configurado con Jenkins con generación automática de releases.
+* Cada release debe disponer de su propio Changelog detallado.
 
 El proyecto tiene que estar configurado en Jenkins, con SonarQube y desplegado en Rancher.
 
@@ -63,7 +63,7 @@ De cara a las herramientas de CI/CD es necesario tener configurado un Jenkins co
 
 ### Procedimiento
 
-Generamos el proyecto
+Creamos el proyecto sirviéndonos del generador "Generator Redpanda Node Module", basado en Yeoman:
 
 ```shell
 $ yo redpanda-node-module
@@ -171,7 +171,7 @@ To github.com:jenkins-workshop-kairosds/api-status.git
  * [new branch]      master -> master
 ```
 
-Una vez que tenemos las configuraciones en nuestro proyecto, comenzamos el desarrollo. Dado que no es el objeto de este workshop, tenemos los ficheros en el directorio "api-monitoring-files", sólo tendremos que copiarlas a nuestro proyecto
+Una vez que tenemos las configuraciones en nuestro proyecto, comenzamos el desarrollo. Dado que no es el objeto de este workshop, tenemos los ficheros en el directorio "api-monitoring-files", sólo tendremos que copiarlas a nuestro proyecto:
 
 ```shell
 $ cp -rv jenkins-pipeline-workshop/api-monitoring-files api-monitoring
