@@ -16,6 +16,7 @@ pipeline {
             }
         }
         stage ('Make release') {
+            agent { label 'docker' }
             when { branch 'release/new' }
             steps {
                 jplMakeRelease(cfg,true)
