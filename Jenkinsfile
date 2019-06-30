@@ -16,7 +16,7 @@ pipeline {
             }
         }
         stage ('Make release') {
-            when { brancch 'release/new' }
+            when { branch 'release/new' }
             steps {
                 jplMakeRelease(cfg,true)
             }
